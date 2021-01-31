@@ -1,0 +1,34 @@
+{
+  "name": "textalive-app-p5js",
+  "private": true,
+  "version": "1.0.0",
+  "description": "p5.js を使った TextAlive App API の作例",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html --out-dir dev",
+    "build": "parcel build src/index.html --public-url ./ --out-dir docs --no-source-maps",
+    "clean": "del-cli .cache dev docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TextAliveJp/textalive-app-p5js.git"
+  },
+  "keywords": [
+    "textalive"
+  ],
+  "author": "Jun Kato <i@junkato.jp> (https://junkato.jp)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TextAliveJp/textalive-app-p5js/issues"
+  },
+  "homepage": "https://github.com/TextAliveJp/textalive-app-p5js#readme",
+  "dependencies": {
+    "p5": "^1.1.9",
+    "textalive-app-api": "^0.2.1"
+  },
+  "devDependencies": {
+    "del-cli": "^3.0.1",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-clean-dist": "0.0.6"
+  }
+}
